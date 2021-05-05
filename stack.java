@@ -5,7 +5,7 @@ class Main {
         Stack<String> animals = new Stack<>();
         // add elements to Stack//
 
-        animals.push("Dog");
+        animals.push("Elephant");
         animals.push("Cat");
         animals.push("Tiger");
         animals.push("Lion");
