@@ -1,2 +1,3 @@
-MyApp/n
+MyApp
+
 This is my app
