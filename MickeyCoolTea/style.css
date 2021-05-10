@@ -1,0 +1,115 @@
+body
+{
+    margin: 0px;
+    padding:0px;
+    background-image: url(back.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+
+nav {
+  float: right;
+}
+
+nav ul{
+  margin:0;
+  padding:0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 40px;
+  padding-top: 0px;
+  position: relative;
+}
+  nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    color: red;
+  }
+  
+  nav a::before {
+    content: '';
+    display: block;
+    height: 0px;
+    background-color: rgb(226, 224, 224);
+  
+    position: relative;
+    top: 0;
+    width: 0%;
+  
+    transition: all ease-in-out 250ms;
+  }
+  
+  nav a:hover::before {
+    width: 100%;
+  }  
+
+
+section
+{   
+    width: 80%;
+    height: 25vh;   
+}
+h1
+{
+
+    top:5px;
+    transform: translateY( 40%);
+    width: 100%;
+    text-align: center;
+    font-size: 5em;
+    Letter-spacing: 0em;
+
+}
+h1 span
+{
+    display: inline-block;
+    animation: animate 3s linear forwards;
+    
+}
+.slider{
+  height: 400px;
+  width: 400px;
+  background: url(1.png);
+  padding-left: 0%;
+  margin-left: 5%;
+  padding-top: 0%;
+  animation: slide 15s infinite;
+}
+@keyframes slide{
+  25%{
+    background: url(2.png );
+  }
+  50%{
+    background: url(3.png );
+  }
+  75%{
+    background: url(4.png );
+  }
+
+}
+@keyframes animate
+{
+    0%
+    {
+        opacity: 0;
+        transform: rotateY(180deg);
+        filter: blur(30px);
+    }
+    100%
+    {
+        opacity: 1;
+        transform: rotateY(0deg);
+        filter: blur(0px);
+    }
+
+}
